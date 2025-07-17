@@ -31,13 +31,13 @@ Map showing the property’s geographical location using Mapbox/Google Maps.
 
 ### ⭐ 4. Reviews Section
 Users can rate and review listings — helpful for future renters.  
-![Review Section](./public/images/Screenshot%202025-07-18%20000120.png)
+![Review Section](./public/images/Screenshot%202025-07-18%20000208.png)
 
 ---
 
 ### ➕ 5. Add New Listing Page
 A form interface that lets users upload new rental properties with images.  
-![Add Listing](./public/images/Screenshot%202025-07-18%20000208.png)
+![Add Listing](./public/images/Screenshot%202025-07-18%20000120.png)
 
 
 
