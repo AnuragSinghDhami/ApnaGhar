@@ -2,11 +2,44 @@
 
 **ApnaGhar** is a full-stack rental web application built to help students and individuals find affordable housing with ease. It allows users to list, browse, and manage rental properties with a clean and responsive interface.
 
-![Banner](/public/images/house.png)
-
 ## 🔗 Live Demo
 
 👉 [Visit Live Site](https://apnaghar-7qbd.onrender.com/listings)
+
+
+---
+
+## 📸 Screenshots
+
+### 🏠 1. Homepage – Rental Listings
+A clean, student-friendly interface showcasing all available rental listings.  
+![Homepage](./public/images/Screenshot%202025-07-17%20235902.png)
+
+---
+
+### 📄 2. Property Details View
+Detailed view of a selected listing with photos, rent info, and description.  
+![Show Listing](./public/images/Screenshot%202025-07-17%20235931.png)
+
+---
+
+### 🗺️ 3. Integrated Map Location
+Map showing the property’s geographical location using Mapbox/Google Maps.  
+![Map View](./public/images/Screenshot%202025-07-17%20235952.png)
+
+---
+
+### ⭐ 4. Reviews Section
+Users can rate and review listings — helpful for future renters.  
+![Review Section](./public/images/Screenshot%202025-07-18%20000120.png)
+
+---
+
+### ➕ 5. Add New Listing Page
+A form interface that lets users upload new rental properties with images.  
+![Add Listing](./public/images/Screenshot%202025-07-18%20000208.png)
+
+
 
 ---
 
@@ -21,14 +54,6 @@
 - 📦 Cloudinary for image uploads
 - 💻 Responsive UI using Bootstrap
 - 🌐 Deployed on Render
-
----
-
-## 📸 Screenshots
-
-> You can add screenshots of your homepage, listing page, and form page here  
-> Example:
-> ![Listing Page](https://your-screenshot-url.com/listing.png)
 
 ---
 
