@@ -1,6 +1,6 @@
 # 🏠 ApnaGhar – Student-Friendly Rental Platform
 
-**ApnaGhar** is a full-stack rental web application built to help students and individuals find affordable housing with ease. It allows users to list, browse, and manage rental properties with a clean and responsive interface.
+**ApnaGhar** is a full-stack rental web application built to help college students and individuals find affordable housing with ease. It allows users to list, browse, and manage rental properties with a clean and responsive interface.
 
 ## 🔗 Live Demo
 
