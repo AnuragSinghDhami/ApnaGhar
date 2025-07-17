@@ -1,0 +1,9 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="text-center bg-white p-5 rounded shadow-lg">
+    <h1 class="display-4 text-danger mb-3"><%= statusCode %> - Error</h1>
+    <p class="lead"><%= message %></p>
+    <a href="/listings" class="btn btn-outline-danger mt-3">Back to Listings</a>
+  </div>
+</div>

@@ -1,0 +1,330 @@
+/* --- General Body & Font --- */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* --- Navbar --- */
+.navbar {
+    height: 5rem;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar-brand i {
+    color: rgb(112, 75, 214);
+    font-size: 2rem;
+}
+
+.navbar-brand b {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: rgb(112, 75, 214);
+}
+
+/* --- Search Bar --- */
+.search-bar form {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 999px;
+    padding: 0.3rem 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: box-shadow 0.3s ease;
+    max-width: 400px;
+    width: 100%;
+}
+
+.search-bar form:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.search-input {
+    border: none !important;
+    outline: none !important;
+    background: transparent;
+    font-size: 0.95rem;
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border-radius: 999px;
+    min-width: 0;
+}
+
+/* --- Search Button --- */
+.search-btn {
+    margin-left: 0.4rem;
+    background: linear-gradient(135deg, rgb(112, 75, 214), #7155db) !important;
+    border: none !important;
+    color: white !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(112, 75, 214, 0.3) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #6344d6, #745add) !important;
+    box-shadow: 0 8px 20px rgba(112, 75, 214, 0.4) !important;
+}
+
+/* --- Nav Links --- */
+.nav-link {
+    color: #222 !important;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(112, 75, 214);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* --- Dropdown --- */
+.dropdown-toggle {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 0.5rem !important;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.dropdown-toggle i {
+    margin: 0 0.25rem;
+}
+.dropdown-menu {
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    padding: 0.5rem 0;
+}
+.dropdown-item {
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.dropdown-item:hover {
+    background-color: #f7f7f7;
+    color: #222;
+}
+
+/* --- Icon --- */
+.fa-compass {
+    color: rgb(112, 75, 214);
+}
+
+/* --- Listing Cards --- */
+.listing-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.listing-card {
+    border: none;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.listing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.listing-card .card-img-top {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.listing-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.listing-card .card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.listing-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.listing-card .card-text {
+    line-height: 1.4;
+}
+
+/* --- Buttons --- */
+.add-btn, .edit-btn {
+    background-color: rgb(112, 75, 214);
+    border: none;
+    color: white;
+}
+
+/* --- Show Page --- */
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#map {
+    height: 400px;
+    width: 80vh;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #f8f9fa;
+    padding: 2.5rem 0;
+    margin-top: auto;
+    border-top: 1px solid #e7e7e7;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    color: #222;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.f-info-socials i:hover {
+    color: rgb(112, 75, 214);
+    transform: translateY(-2px);
+}
+
+.f-info-brand {
+    font-weight: 500;
+    color: #555;
+    text-align: center;
+}
+
+/* --- Filter Bar --- */
+.filter-bar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.filter-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-btn {
+    color: #6c757d;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid transparent;
+}
+
+.filter-btn:hover {
+    color: #222222;
+    opacity: 1;
+    transform: translateY(-2px);
+    border-bottom-color: #222222;
+}
+
+.filter-btn i {
+    font-size: 1.25rem;
+}
+
+.filter-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+/* --- CTA Button --- */
+.add-listing-btn {
+    background-color: rgb(112, 75, 214) !important;
+    color: white !important;
+    border-radius: 8px;
+    padding: 0.6rem 1rem !important;
+    margin: 0 1rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.add-listing-btn::after {
+    display: none;
+}
+
+.add-listing-btn:hover {
+    background-color: #6344d6 !important;
+    transform: translateY(-2px);
+}
+
+.navbar-nav {
+  background-color: white;
+}

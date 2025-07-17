@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-md sticky-top shadow-sm" style="background-color: white;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/listings">
+      <i class="fa-solid fa-house-chimney" style="color: rgb(112, 75, 214);"></i>
+      <b style="color: rgb(112, 75, 214);">ApnaGhar</b>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      
+     <div class="navbar-nav mx-auto">
+  <div class="search-bar">
+    <form class="d-flex" role="search" action="/listings" method="GET">
+      <input 
+        class="form-control search-input" 
+        type="search" 
+        name="search"  placeholder="Search destinations"
+      >
+      <button class="btn search-btn" type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+  </div>
+</div>
+
+      <!-- Right Nav Items -->
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link add-listing-btn" href="/listings/new">Add new Listing</a>
+
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-circle-user"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <% if (!currUser) { %>
+              <li><a class="dropdown-item" href="/signup">Sign Up</a></li>
+              <li><a class="dropdown-item" href="/login">Log In</a></li>
+            <% } %>
+            <% if (currUser) { %>
+              <li><a class="dropdown-item" href="/logout">Log Out</a></li>
+            <% } %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

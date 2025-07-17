@@ -1,0 +1,116 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row">
+  <div class="col-8 offset-2 mt-3">
+    <h3>Create a New Listing</h3>
+    <form method="POST" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input
+          name="listing[title]"
+          placeholder="Add a Catchy Title"
+          type="text"
+          class="form-control"
+          required
+        />
+        <div class="valid-feedback">Ttile looks good</div>
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">description</label>
+        <textarea name="listing[description]" class="form-control" required></textarea>
+        <div class="invalid-feedback">Please enter a short description</div>
+      </div>
+
+      
+      <div class="mb-3">
+        <label for="image" class="form-label" >Upload Image</label>
+        <input
+          name="listing[image]"
+         
+          type="file"
+          class="form-control"
+          required
+        />
+        
+      </div>
+
+      <div class="row">
+        <div class="mb-3 col-md-4">
+          <label for="price" class="form-label">Price</label>
+          <input
+            name="listing[price]"
+            placeholder="enter price"
+            class="form-control" required
+          />
+          <div class="invalid-feedback">Price should be valid</div>
+        </div>
+
+        <div class="mb-3 col-md-8">
+          <label for="country" class="form-label">Country</label>
+          <input
+            name="listing[country]"
+            placeholder="enter country"
+            type="text"
+            class="form-control" required
+          />
+          <div class="invalid-feedback">Country should be valid</div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input
+          name="listing[location]"
+          placeholder="enter location"
+          type="text"
+          class="form-control" required
+        />
+        <div class="invalid-feedback">Location should be valid</div>
+      </div>
+      <br />
+
+<div class="mb-3">
+  <label class="form-label"><b>Features / Vibes</b></label>
+  <div class="d-flex flex-wrap gap-4">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="listing[features][]" value="Wifi" id="feature-wifi" />
+      <label class="form-check-label" for="feature-wifi"><i class="fa-solid fa-wifi"></i> Wifi</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="listing[features][]" value="Furnished" id="feature-furnished" />
+      <label class="form-check-label" for="feature-furnished"><i class="fa-solid fa-couch"></i> Furnished</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="listing[features][]" value="Private Kitchen" id="feature-kitchen" />
+      <label class="form-check-label" for="feature-kitchen"><i class="fa-solid fa-kitchen-set"></i> Private Kitchen</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="listing[features][]" value="Attached Bathroom" id="feature-bathroom" />
+      <label class="form-check-label" for="feature-bathroom"><i class="fa-solid fa-bath"></i> Attached Bathroom</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="listing[features][]" value="Single Room" id="feature-single" />
+      <label class="form-check-label" for="feature-single"><i class="fa-solid fa-bed"></i> Single Room</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="listing[features][]" value="Double Sharing" id="feature-double" />
+      <label class="form-check-label" for="feature-double"><i class="fa-solid fa-users"></i> Double Sharing</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="listing[features][]" value="Independent" id="feature-independent" />
+      <label class="form-check-label" for="feature-independent"><i class="fa-solid fa-house-user"></i> Independent</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="listing[features][]" value="Within 1km" id="feature-nearby" />
+      <label class="form-check-label" for="feature-nearby"><i class="fa-solid fa-location-dot"></i> Within 1km</label>
+    </div>
+  </div>
+</div>
+
+
+
+<button class="btn btn-dark add-btn mt-3">Add</button>
+    </form>
+  </div>
+</div>
+<br />
